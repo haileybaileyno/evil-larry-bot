@@ -7,9 +7,9 @@ const { EmbedBuilder } = require('discord.js');
 // Replace these with your actual hosted images or upload them to a Discord channel
 // and copy the CDN URLs. These are placeholder descriptive URLs.
 const IMAGES = {
-  EVIL_LARRY:   'https://i.imgur.com/evil-larry-placeholder.png',  // Replace with real ELC meme
-  EVIL_JAMES:   'https://i.imgur.com/evil-james-placeholder.png',  // Replace with real ELC meme
-  CHAMBER:      'https://i.imgur.com/chamber-placeholder.png',     // Replace with explosion chamber meme
+  EVIL_LARRY:   'https://cdn.discordapp.com/attachments/1480233701324361860/1480235684622106644/LARRY_LE_MALICIEUX_sur_TikTok.jfif?ex=69aef068&is=69ad9ee8&hm=3f5aca9866d451a272b8a791ddf338a6ec2d1fcad5161e903d8a1b11ff69aab7&',  // Replace with real ELC meme
+  EVIL_JAMES:   'https://cdn.discordapp.com/attachments/1480233701324361860/1480235684957782077/James.webp?ex=69aef068&is=69ad9ee8&hm=cfb5b0cd05c71730cb6c70893e911347139461929b662821f8ae6aa1934dea6f&',  // Replace with real ELC meme
+  CHAMBER:      'https://cdn.discordapp.com//attachments1480233701324361860/1480235684332830890/download.jfif?ex=69aef068&is=69ad9ee8&hm=d9b957ac24067feff0bb38e00fe1f0b319ad1b32bf78af6f13d27fae7f25f5a1&',     // Replace with explosion chamber meme
 };
 
 // ─── Color Palette ────────────────────────────────────────────────────────────
