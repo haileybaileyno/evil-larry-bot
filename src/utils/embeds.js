@@ -52,9 +52,9 @@ function buildStartEmbed(user, member) {
     .setColor(COLORS.EVIL_RED)
     .setThumbnail(member.displayAvatarURL({ dynamic: true }))
     .addFields(
-      { name: '👤 User', value: `${member.user.username}`, inline: true },
-      { name: '💰 Starting PEENAR', value: '1', inline: true },
-      { name: '🔥 Status', value: 'Normal', inline: true }
+      { name: '👤 User', value: `${member.user.username}.\n`, inline: false },
+      { name: '💰 Starting PEENAR', value: '1.\n', inline: false },
+      { name: '🔥 Status', value: 'Normal.\n', inline: false }
     )
     .setImage(IMAGES.EVIL_LARRY)
     .setFooter({ text: 'Evil Larry is always watching. 🐱' })
@@ -91,12 +91,12 @@ function buildProfileEmbed(dbUser, member) {
     .setColor(dbUser.status === 'Larrified' ? COLORS.EVIL_RED : COLORS.DARK)
     .setThumbnail(member.displayAvatarURL({ dynamic: true }))
     .addFields(
-      { name: '💰 PEENAR', value: `${dbUser.peenar_balance}`, inline: true },
-      { name: '🔥 Status', value: statusText, inline: true },
-      { name: '🛡 Protection', value: protectionText, inline: true },
-      { name: '😈 Evil Level', value: `${dbUser.evil_level} — ${evilRank}`, inline: true },
-      { name: '💀 Stolen PEENAR Available', value: `${dbUser.stolen_peenar}`, inline: true },
-    )
+    { name: '💰 PEENAR', value: `${dbUser.peenar_balance}`, inline: false },
+    { name: '🔥 Status', value: statusText, inline: false },
+    { name: '🛡 Protection', value: protectionText, inline: false },
+    { name: '😈 Evil Level', value: `${dbUser.evil_level} — ${evilRank}`, inline: false },
+    { name: '💀 Stolen PEENAR Available', value: `${dbUser.stolen_peenar}`, inline: false },
+  )
     .setFooter({ text: randomFooter() })
     .setTimestamp();
 }
